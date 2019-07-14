@@ -1,16 +1,70 @@
 @import "_normalize";
 @import "_variables";
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=latin-ext');
 
 
 html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
 body {
-  color: $yellow;
-  background: $violet;
+  background: #C4C4C4;
+  font-family: 'Roboto', sans-serif;
+  min-height: 100vh;
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 0;
+}
+
+h1 {
+  font-size: 24px;
+  line-height: 107px;
+  margin: 0;
+  align-self: flex-end;
+}
+
+textarea {
+  min-width: 443px;
+  min-height: 271px;
+  border-radius: 20px;
+  padding: 20px;
+  background: #EDEDED;
+}
+
+button {
+  width: 61px;
+  height: 25px;
+  color: whitesmoke;
+  border: none;
+  text-align: center;
+  font-size: 14px;
+  margin: 14px;
+}
+
+
+.editor {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.save {
+  background: #2AA436;
+}
+
+.load {
+  background: #2A40B4;
 }
